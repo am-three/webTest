@@ -1,6 +1,7 @@
 import './style.css'
 import video1 from '../assets/video1.mp4'
 import video2 from '../assets/video2.mp4'
+import video3 from '../assets/webVid.mp4'
 
 const HeroSection = () => {
 
@@ -30,13 +31,13 @@ const HeroSection = () => {
             </div>
 
             <div className='flex mt-48 justify-center space-x-5'>
-                <video autoPlay loop muted className='w-1/2 border rounded-lg border-orange-600 shadow-orange-400 my-4'>
+                {/* <video autoPlay loop muted className='w-1/2 border rounded-lg border-orange-600 shadow-orange-400 my-4'>
                     <source src={video1} type='video/mp4' />
                     Your browser does not support the video tag.
-                </video>
+                </video> */}
 
-                <video autoPlay loop muted className='w-1/2 border rounded-lg border-orange-600 shadow-orange-400 my-4'>
-                    <source src={video2} type='video/mp4' />
+                <video autoPlay loop muted className=' w-[900px] h-[400px]  my-4  opacity-80'>
+                    <source className='' src={video3} type='video/mp4' />
                     Your browser does not support the video tag.
                 </video>
             </div>

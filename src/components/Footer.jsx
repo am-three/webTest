@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center mt-10 font-semibold">
-                <p className="">
+                <p>
                     <span className="fooText bg-gradient-to-b from-slate-200 to-red-600 bg-clip-text text-transparent">
                         &copy; {new Date().getFullYear()} flashWeb
                     </span>

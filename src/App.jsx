@@ -1,0 +1,34 @@
+import HeroSection from './components/HeroSection'
+import Navbar from './components/Navbar'
+import FeatureSection from './components/FeatureSection'
+import Service from './components/Service'
+import Purpose from './components/Purpose'
+import OurPartners from './components/OurPartners'
+import Footer from './components/Footer'
+
+const App = () => {
+  return (
+    <>
+      <Navbar />
+
+      <div className='max-w-7xl mx-auto pt-20 px-6'>
+        <HeroSection />
+      </div>
+
+      <FeatureSection />
+
+      <Service />
+
+      <Purpose />
+
+      <OurPartners />
+
+      <Footer />
+
+    </>
+
+
+  )
+}
+
+export default App

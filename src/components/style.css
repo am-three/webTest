@@ -1,0 +1,147 @@
+/* navSection */
+
+nav .container .div1 ul li a:hover {
+    font-weight: bold;
+    color: orange;
+}
+
+.drawerContainer ul li a:hover {
+    font-weight: bold;
+    color: orange;
+}
+
+.buttonContainer .signInBtn:hover,
+.buttonContainer .registerBtn:hover,
+.drawerContainer .signIn:hover,
+.drawerContainer .register:hover {
+    background-image: linear-gradient(9deg, #E06B12 45%, #EDDD53 90%);
+}
+
+
+/* heroSection */
+
+.heroContainer .takeATour:hover,
+.heroContainer .aboutUs:hover {
+    background-image: linear-gradient(9deg, #E06B12 45%, #EDDD53 90%);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.aniText1 {
+    overflow: hidden;
+    border-bottom: 1px solid rgb(214, 160, 105);
+    animation:
+        typing 2s steps(80, end) forwards,
+        blink 3s infinite;
+}
+
+
+/* featureSection */
+
+.featDesc:hover {
+    color: #ffffff;
+}
+
+.featIcon {
+    border: none;
+}
+
+.featIcon:hover {
+    border: 2px solid rgba(237, 204, 39, 0.762);
+    transition: 1s;
+}
+
+
+
+/* sercvices */
+
+.acdemicBg {
+    box-shadow: 3px 2px 8px 2px rgba(161, 95, 51, 0.916);
+}
+
+
+/* purposes */
+
+.purposeBdr:hover {
+    border-color: #d26716be;
+    transition: 1.2s;
+    color: #bd6b14;
+    text-transform: capitalize;
+    /* font-size: 14px; */
+}
+
+.registerBtn:hover {
+    background-image: linear-gradient(9deg, #E06B12 45%, #EDDD53 90%);
+    font-size: 14px;
+}
+
+
+/* partners */
+
+/* @keyframes imgMove {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 2000px;
+    }
+}
+
+.ptnerImg {
+    position: relative;
+    animation: imgMove 10s linear infinite;
+} */
+
+
+@keyframes UpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.ptnerImg,
+.heroBtn,
+.serviceImg {
+    animation: UpDown 3s ease-in-out infinite;
+}
+
+
+/* footer */
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.fooText {
+    display: inline-block;
+    animation: bounce 2s infinite ease-in-out;
+}

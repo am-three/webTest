@@ -1,6 +1,6 @@
 import './style.css'
-import video1 from '../assets/video1.mp4'
-import video2 from '../assets/video2.mp4'
+// import video1 from '../assets/video1.mp4'
+// import video2 from '../assets/video2.mp4'
 import video3 from '../assets/webVid.mp4'
 
 const HeroSection = () => {

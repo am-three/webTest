@@ -14,7 +14,7 @@ import ptner5 from '../assets/profile-pictures/ptner5.png';
 import ptner6 from '../assets/profile-pictures/ptner6.png';
 
 export const navItems = [
-  { label: "Home", href: "#", to: '/home' },
+  { label: "Home", href: "#", to: '/' },
   { label: "Services", href: "#", to: '/service' },
   { label: "Opportunities", href: "#", to: 'opportunities' },
   { label: "About Us", href: "#", to: 'aboutus' },

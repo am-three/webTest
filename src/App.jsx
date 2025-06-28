@@ -21,7 +21,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout />} >
 
-      <Route path='/home' element={<HeroSection />} />
+      <Route path='/' element={<HeroSection />} />
       <Route path='service' element={<Service />} />
       <Route path='opportunities' element={<Opportunities />} />
       <Route path='aboutus' element={<AboutUs />} />
@@ -36,11 +36,6 @@ const router = createBrowserRouter(
       <Route path='purpose' element={<Purpose />} />
       <Route path='ourpartners' element={<OurPartners />} />
       <Route path='footer' element={<Footer />} /> */}
-
-
-
-
-
 
 
 

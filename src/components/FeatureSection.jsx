@@ -1,11 +1,22 @@
 import './style.css';
 import { features } from "../constants"
+import video3 from '../assets/webVid.mp4'
 
 const FeatureSection = () => {
 
     return (
 
-        <div className="relative mt-20 border-b border-neutral-600 min-h-[500px]">
+        <div className="relative  border-b border-neutral-600 min-h-[500px]">
+
+            <div className='flex mt-48 justify-center space-x-5 mt-0 mb-36'>
+
+                <video autoPlay loop muted className='  h-screen opacity-80'>
+                    <source className='' src={video3} type='video/mp4' />
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+
 
             <div className="text-center">
                 <span className="text-orange-500 uppercase bg-neutral-800 rounded-full h-6 font-medium px-5 py-3">

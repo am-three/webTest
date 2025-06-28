@@ -129,7 +129,7 @@ nav .container .div1 ul li a:hover {
 
 /* footer */
 
-@keyframes bounce {
+/* @keyframes bounce {
 
     0%,
     100% {
@@ -144,4 +144,141 @@ nav .container .div1 ul li a:hover {
 .fooText {
     display: inline-block;
     animation: bounce 2s infinite ease-in-out;
+} */
+
+
+
+.fooText {
+    /* font-size: 3rem; */
+    color: rgba(241, 224, 37, 0.889);
+    text-shadow:
+        0 0 5px rgba(0, 255, 255, 0.659),
+        0 0 10px rgba(0, 255, 255, 0.527),
+        0 0 20px #0ff,
+        0 0 40px rgba(0, 255, 255, 0.826);
+    animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+
+    0%,
+    16%,
+    21%,
+    23%,
+    30%,
+    54%,
+    56%,
+    100% {
+        opacity: 1;
+    }
+
+    20%,
+    22%,
+    24%,
+    55% {
+        opacity: 0.8;
+    }
+}
+
+
+/* sign in form */
+
+
+.signIncontainer {
+    padding-left: 100px;
+    /* padding-right: 10px;  */
+    cursor: pointer;
+    margin: 0;
+
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(227, 126, 10);
+    border-radius: 3px;
+    font-family: monospace;
+    color: rgba(255, 255, 255, 0.821);
+    padding: 20px 45px 20px 20px;
+    cursor: pointer;
+
+}
+
+.inputBox input::placeholder {
+    color: rgba(255, 255, 255, 0.821);
+    font-family: monospace;
+    /* padding-left: 5px; */
+
+}
+
+.inputBox input:hover {
+    box-shadow: 0 0 5px rgba(213, 119, 4, 0.923);
+    font-size: 15px;
+}
+
+.signIncontainer .remember {
+    margin: -10px 5px 40px;
+    font-size: small;
+}
+
+.remember label input {
+    accent-color: #e26c04;
+    margin-right: 1px;
+
+}
+
+.subSignIn {
+    width: 100%;
+    height: 40px;
+    /* margin-top: 20px; */
+    border: 1px solid #bd6b14;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(246, 121, 4, 0.923);
+}
+
+.subSignIn:hover {
+    font-size: large;
+}
+
+.signInLink {
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.signInLink p a {
+    font-weight: 600;
+}
+
+.signInLink p a:hover {
+    text-decoration: underline;
+}
+
+
+/* regist form */
+
+.registSub {
+    border: 1px solid #bd6b14;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(246, 121, 4, 0.923);
+}
+
+.registSub:hover {
+    font-size: 14px;
 }

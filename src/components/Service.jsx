@@ -8,7 +8,7 @@ import './style.css';
 const Service = () => {
     return (
 
-        <div className='mt-20 cursor-pointer'>
+        <div className='cursor-pointer'>
 
             <h2 className='md:text-6xl text-3xl text-center mt-6 tracking-tight
             bg-gradient-to-r from-orange-400 to-orange-700 text-transparent bg-clip-text'>
@@ -37,6 +37,8 @@ const Service = () => {
 
                     ))}
                 </div>
+
+
             </div>
 
         </div>

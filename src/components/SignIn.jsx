@@ -4,7 +4,7 @@ import './style.css'
 
 const SignIn = () => {
     return (
-        <div className=''>
+        <div>
             <form className='signIncontainer  flex justify-center items-center  gap-5 p-10'>
                 <div className='md:w-1/2 w-full'>
                     <h3 className='text-center font-bold'> <span className='text-orange-400' > Sign In </span> </h3>

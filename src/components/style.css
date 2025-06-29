@@ -7,7 +7,7 @@ nav .container .div1 ul li a:hover {
 
 .drawerContainer ul li a:hover {
     font-weight: bold;
-    color: orange;
+    color: rgba(231, 127, 0, 0.914);
 }
 
 .buttonContainer .signInBtn:hover,
@@ -15,6 +15,10 @@ nav .container .div1 ul li a:hover {
 .drawerContainer .signIn:hover,
 .drawerContainer .register:hover {
     background-image: linear-gradient(9deg, #E06B12 45%, #EDDD53 90%);
+}
+
+a.active {
+    color: rgb(234, 123, 37);
 }
 
 
@@ -163,8 +167,8 @@ nav .container .div1 ul li a:hover {
 
     0%,
     16%,
-    21%,
-    23%,
+    22%,
+    25%,
     30%,
     54%,
     56%,
@@ -185,7 +189,7 @@ nav .container .div1 ul li a:hover {
 
 
 .signIncontainer {
-    padding-left: 100px;
+    /* padding-left: 100px; */
     /* padding-right: 10px;  */
     cursor: pointer;
     margin: 0;
@@ -273,6 +277,17 @@ h3 {
 
 /* regist form */
 
+
+.registInput {
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(227, 126, 10);
+}
+
 .registSub {
     border: 1px solid #bd6b14;
     border-radius: 3px;
@@ -282,3 +297,6 @@ h3 {
 .registSub:hover {
     font-size: 14px;
 }
+
+
+/* ---------------------------------- */

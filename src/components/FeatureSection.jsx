@@ -8,7 +8,7 @@ const FeatureSection = () => {
 
         <div className="relative  border-b border-neutral-600 min-h-[500px]">
 
-            <div className='flex mt-48 justify-center space-x-5 mt-0 mb-36'>
+            <div className='flex  justify-center space-x-5 mt-0 mb-36'>
 
                 <video autoPlay loop muted className='  h-screen opacity-80'>
                     <source className='' src={video3} type='video/mp4' />

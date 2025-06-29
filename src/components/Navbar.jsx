@@ -40,8 +40,8 @@ const Navbar = () => {
                             //     <a href={item.href}> {item.label} </a>
                             // </li>
 
-                            <NavLink to={item.to}>
-                                <li key={index}>
+                            <NavLink to={item.to} >
+                                <li key={index} onClick={() => navigate('', { replace: true })}>
                                     <a href={item.href} > {item.label} </a>
 
                                     {/* <Link> {item.label} </Link> */}
@@ -52,11 +52,11 @@ const Navbar = () => {
                     </ul>
 
                     <div className='buttonContainer hidden lg:flex justify-center space-x-12 items-center'>
-                        <a href='#' onClick={() => navigate('/signin')} className='signInBtn  py-2 px-3 border rounded-md'>
+                        <a href='#' onClick={() => navigate('/signin', { replace: true })} className='signInBtn  py-2 px-3 border rounded-md'>
                             Sign In
                         </a>
 
-                        <a href='#' onClick={() => navigate('/register')} className='registerBtn py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-800  rounded-md'>
+                        <a href='#' onClick={() => navigate('/register', { replace: true })} className='registerBtn py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-800  rounded-md'>
                             Register
                         </a>
                     </div>

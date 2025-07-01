@@ -47,7 +47,7 @@ const AboutUs = () => {
 
             </div>
 
-            <div className="text-center mt-10 font-semibold">
+            <div className="text-center mt-[200px] font-semibold">
                 <p>
                     <span className="fooText bg-gradient-to-b from-slate-200 to-red-600 bg-clip-text text-transparent">
                         &copy; {new Date().getFullYear()} flashWeb &trade;

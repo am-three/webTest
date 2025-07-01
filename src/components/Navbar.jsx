@@ -48,6 +48,9 @@ const Navbar = () => {
 
                                 </li>
                             </NavLink>
+
+
+
                         ))}
                     </ul>
 
@@ -79,7 +82,7 @@ const Navbar = () => {
                                 //     <a href={item.href}> {item.label} </a>
                                 // </li>
 
-                                <NavLink to={item.to}>
+                                <NavLink to={item.to} onClick={() => setDrawerOpen(false)}>
                                     <li key={index} className='py-4'>
                                         <a href={item.href} > {item.label} </a>
 
@@ -91,11 +94,11 @@ const Navbar = () => {
                         </ul>
 
                         <div className='flex space-x-6'>
-                            <a href='#' onClick={() => navigate('/signin')} className='signIn py-2 px-3 border rounded-md'>
+                            <a href='#' onClick={() => { navigate('/signin'); setDrawerOpen(false) }} className='signIn py-2 px-3 border rounded-md'>
                                 Sign In
                             </a>
 
-                            <a href='#' onClick={() => navigate('register')} className='register py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-800 rounded-md'>
+                            <a href='#' onClick={() => { navigate('register'); setDrawerOpen(false) }} className='register py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-800 rounded-md'>
                                 Register
                             </a>
                         </div>

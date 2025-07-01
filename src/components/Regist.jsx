@@ -60,7 +60,6 @@ const Regist = () => {
 
             </form>
 
-
             <div className="text-center font-semibold">
                 <p>
                     <span className="fooText bg-gradient-to-b from-slate-200 to-red-600 bg-clip-text text-transparent">
@@ -74,5 +73,3 @@ const Regist = () => {
 }
 
 export default Regist
-
-

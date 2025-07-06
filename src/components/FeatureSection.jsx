@@ -8,9 +8,9 @@ const FeatureSection = () => {
 
         <div className="relative  border-b border-neutral-600 min-h-[500px]">
 
-            <div className='mt-[-50px] h-vh md:m-0 mb-36'>
+            <div className='mt-[-50px] mb-36'>
 
-                <video autoPlay loop muted className='h-screen opacity-80'>
+                <video autoPlay loop muted className=' w-screen opacity-80 m-0'>
                     <source className='' src={video3} type='video/mp4' />
                     Your browser does not support the video tag.
                 </video>

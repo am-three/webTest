@@ -19,6 +19,7 @@ import { Routes, Route, createBrowserRouter, createRoutesFromElements, RouterPro
 const router = createBrowserRouter(
 
   createRoutesFromElements(
+
     <Route path='/' element={<RootLayout />} >
 
       <Route path='/' element={<HeroSection />} />

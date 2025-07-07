@@ -2,8 +2,13 @@ import { purposesTo } from "../constants"
 import { Maximize } from 'lucide-react';
 import './style.css';
 
+import { useNavigate } from "react-router-dom";
+
 
 const Purpose = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className="mt-20 p-20">
 
@@ -26,7 +31,7 @@ const Purpose = () => {
             </div>
 
             <div className="mt-20 text-center">
-                <a href='#' className='registerBtn bg-gradient-to-r from-orange-500 to-orange-800 rounded-md px-20 py-4'>
+                <a href='#' onClick={() => navigate('/register')} className='registerBtn bg-gradient-to-r from-orange-500 to-orange-800 rounded-md px-20 py-4'>
                     REGISTER
                 </a>
 

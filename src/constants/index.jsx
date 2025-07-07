@@ -15,8 +15,9 @@ import ptner6 from '../assets/profile-pictures/ptner6.png';
 
 export const navItems = [
   { label: "Home", href: "#", to: '/' },
-  { label: "Services", href: "#", to: '/service' },
+  // { label: "Services", href: "#", to: 'service' },
   { label: "Opportunities", href: "#", to: 'opportunities' },
+  { label: "Academic Services", href: "#", to: 'acdemicservice' },
   { label: "About Us", href: "#", to: 'aboutus' },
 ];
 

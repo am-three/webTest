@@ -49,8 +49,6 @@ const Navbar = () => {
                                 </li>
                             </NavLink>
 
-
-
                         ))}
                     </ul>
 

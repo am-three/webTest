@@ -15,6 +15,10 @@ import RootLayout from './layout/RootLayout'
 import ComponentLayout from './layout/ComponentLayout'
 
 import { Routes, Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+import AcdemicService, { serviceLoader } from './components/AcdemicService'
+import AServiceLayout from './layout/AServiceLayout'
+
+
 
 const router = createBrowserRouter(
 
@@ -23,14 +27,23 @@ const router = createBrowserRouter(
     <Route path='/' element={<RootLayout />} >
 
       <Route path='/' element={<HeroSection />} />
+
       <Route path='service' element={<Service />} />
       <Route path='opportunities' element={<Opportunities />} />
       <Route path='aboutus' element={<AboutUs />} />
       <Route path='signin' element={<SignIn />} />
       <Route path='register' element={<Regist />} />
-      <Route path='*' element={<NotFoundPage />} />
 
       <Route path='pages' element={<ComponentLayout />} />
+
+      <Route path='acdemicservice' element={<AServiceLayout />}>
+
+        <Route index element={<AcdemicService />} loader={serviceLoader} />
+        {/* <Route index element={<AcdemicService />} /> */}
+
+      </Route>
+
+      <Route path='*' element={<NotFoundPage />} />
 
       {/* <Route path='herosection' element={<HeroSection />} />
       <Route path='featuresection' element={<FeatureSection />} />

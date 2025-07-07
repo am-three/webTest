@@ -1,0 +1,24 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "title": "Pre University",
+            "training": "Campus/ Online"
+        },
+        {
+            "id": 2,
+            "title": "International School",
+            "training": "Campus/ Online"
+        },
+        {
+            "id": 3,
+            "title": "Canadian High School",
+            "training": "Campus/ Online"
+        },
+        {
+            "id": 4,
+            "title": "School of IT",
+            "training": "Campus/ Online"
+        }
+    ]
+}

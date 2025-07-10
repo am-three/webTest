@@ -42,7 +42,7 @@ const Navbar = () => {
 
                             <NavLink to={item.to} >
                                 <li key={index} onClick={() => navigate('', { replace: true })}>
-                                    <button href={item.href} key={item.key} disabled={item.disabled} title={item.disabled ? ' ⚠️ sorry its server data :(' : ''} style={{
+                                    <button href={item.href} disabled={item.disabled} title={item.disabled ? ' ⚠️ sorry its server data :(' : ''} style={{
                                         color: item.disabled ? '#b3c7c0' : '',
                                         cursor: item.disabled ? 'help' : 'pointer'
                                     }} >
@@ -89,7 +89,12 @@ const Navbar = () => {
 
                                 <NavLink to={item.to} onClick={() => setDrawerOpen(false)}>
                                     <li key={index} className='py-4'>
-                                        <a href={item.href} > {item.label} </a>
+                                        <button href={item.href} disabled={item.disabled} title={item.disabled ? ' ⚠️ sorry its server data :(' : ''} style={{
+                                            color: item.disabled ? '#b3c7c0' : '',
+                                            cursor: item.disabled ? 'help' : 'pointer'
+                                        }} >
+                                            {item.label}
+                                        </button>
 
                                         {/* <Link> {item.label} </Link> */}
 

@@ -12,12 +12,13 @@ import ptner3 from '../assets/profile-pictures/ptner3.png';
 import ptner4 from '../assets/profile-pictures/ptner4.png';
 import ptner5 from '../assets/profile-pictures/ptner5.png';
 import ptner6 from '../assets/profile-pictures/ptner6.png';
+import { Key } from 'lucide-react';
 
 export const navItems = [
   { label: "Home", href: "#", to: '/' },
   // { label: "Services", href: "#", to: 'service' },
   { label: "Opportunities", href: "#", to: 'opportunities' },
-  { label: "Academic Services", href: "#", to: 'acdemicservice' },
+  { label: "Academic Services", href: "#", to: 'acdemicservice', disabled: true },
   { label: "About Us", href: "#", to: 'aboutus' },
 ];
 

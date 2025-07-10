@@ -58,6 +58,7 @@ const AcdemicService = () => {
 
 export default AcdemicService
 
+
 export const serviceLoader = async () => {
     const res = await fetch('http://localhost:5000/services');
 

@@ -42,9 +42,9 @@ const Navbar = () => {
 
                             <NavLink to={item.to} >
                                 <li key={index} onClick={() => navigate('', { replace: true })}>
-                                    <button href={item.href} key={item.key} disabled={item.disabled} style={{
+                                    <button href={item.href} key={item.key} disabled={item.disabled} title={item.disabled ? ' ⚠️ sorry u needs to run json server' : ''} style={{
                                         color: item.disabled ? '#b3c7c0' : '',
-                                        cursor: item.disabled ? 'not-allowed' : 'pointer'
+                                        cursor: item.disabled ? 'help' : 'pointer'
                                     }} >
 
                                         {item.label}
